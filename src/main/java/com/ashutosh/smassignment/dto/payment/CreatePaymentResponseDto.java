@@ -3,13 +3,13 @@ package com.ashutosh.smassignment.dto.payment;
 public class CreatePaymentResponseDto {
 
     private String paymentId;
-    private String paymentUrl;
+    private String redirectUrl;
 
     public CreatePaymentResponseDto() {}
 
     public CreatePaymentResponseDto(String paymentId, String paymentUrl) {
         this.paymentId = paymentId;
-        this.paymentUrl = paymentUrl;
+        this.redirectUrl = paymentUrl;
     }
 
     public String getPaymentId() {
@@ -20,11 +20,11 @@ public class CreatePaymentResponseDto {
         this.paymentId = paymentId;
     }
 
-    public String getPaymentUrl() {
-        return paymentUrl;
+    public String getRedirectUrl() {
+        return redirectUrl;
     }
 
-    public void setPaymentUrl(String paymentUrl) {
-        this.paymentUrl = paymentUrl;
+    public void setRedirectUrl(String redirectUrl) {
+        this.redirectUrl = redirectUrl;
     }
 }

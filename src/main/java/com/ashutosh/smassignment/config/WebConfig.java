@@ -15,8 +15,8 @@ public class WebConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
 
-                registry.addMapping("/**")                // Allow all endpoints
-                        .allowedOrigins("*")             // Allow all origins (Postman/web)
+                registry.addMapping("/**")
+                        .allowedOrigins("*")
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*");
             }

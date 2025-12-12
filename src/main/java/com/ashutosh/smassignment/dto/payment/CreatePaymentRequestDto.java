@@ -4,12 +4,14 @@ public class CreatePaymentRequestDto {
 
     private String orderId;
     private double amount;
+    private String method;
 
     public CreatePaymentRequestDto() {}
 
-    public CreatePaymentRequestDto(String orderId, double amount) {
+    public CreatePaymentRequestDto(String orderId, double amount,String method) {
         this.orderId = orderId;
         this.amount = amount;
+        this.method = method;
     }
 
     public String getOrderId() {
@@ -26,5 +28,12 @@ public class CreatePaymentRequestDto {
 
     public void setAmount(double amount) {
         this.amount = amount;
+    }
+
+    public String getMethod() {
+        return method;
+    }
+    public void setMethod(String method) {
+        this.method = method;
     }
 }
